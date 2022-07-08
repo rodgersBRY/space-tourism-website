@@ -74,6 +74,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    p {
+      letter-spacing: 2px;
+    }
   }
   .explore-btn:hover {
     cursor: pointer;
