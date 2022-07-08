@@ -50,36 +50,62 @@ export default {
   background-size: cover;
   height: 100vh;
   padding-top: 3rem;
+  color: white;
+}
+
+.explore-btn {
+  background-color: white;
+  color: black;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+  p {
+    letter-spacing: 2px;
+  }
+}
+.explore-btn:hover {
+  cursor: pointer;
 }
 
 main {
-  color: white;
   display: flex;
   justify-content: space-around;
   .title-div,
   .explore-btn-div {
-    height: 70vh;
     display: flex;
+    height: 700px;
     align-items: flex-end;
     padding: 0 2rem;
   }
+}
 
-  .explore-btn {
-    background-color: white;
-    color: black;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    p {
-      letter-spacing: 2px;
+@media only screen and (max-width: 1200px) {
+  main {
+    display: block;
+    padding-top: 4rem;
+    .title-div,
+    .explore-btn-div {
+      display: block;
+      text-align: center;
+      height: 20%;
     }
   }
-  .explore-btn:hover {
-    cursor: pointer;
+  #home {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+    background-size: cover;
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #home {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+    background-size: cover;
   }
 }
 </style>

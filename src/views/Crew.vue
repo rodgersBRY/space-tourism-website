@@ -33,8 +33,7 @@ export default {};
 <style lang="scss" scoped>
 main {
   color: white;
-  margin-top: 2rem;
-  padding: 4rem;
+  padding: 2rem 5rem;
 }
 #crew {
   background-image: url("../assets/crew/background-crew-desktop.jpg");

@@ -34,7 +34,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  
+};
 </script>
 
 <style lang="scss" scoped>
@@ -47,7 +49,7 @@ export default {};
 }
 
 main {
-  padding: 3rem 0 0 3rem;
+  padding: 2rem  0 5rem 5rem;
 }
 
 .top-text {
