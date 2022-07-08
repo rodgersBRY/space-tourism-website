@@ -9,10 +9,10 @@
     </div>
     <div class="nav-links">
       <ul>
-        <router-link to="/" tag="li">00 HOME</router-link>
-        <router-link to="/destination" tag="li">01 DESTINATION</router-link>
-        <router-link to="/crew" tag="li">02 CREW</router-link>
-        <router-link to="/technology" tag="li">03 TECHNOLOGY</router-link>
+        <router-link to="/" tag="li" exact-active-class="active">00 HOME</router-link>
+        <router-link to="/destination" tag="li" active-class="active">01 DESTINATION</router-link>
+        <router-link to="/crew" tag="li" active-class="active">02 CREW</router-link>
+        <router-link to="/technology" tag="li" active-class="active">03 TECHNOLOGY</router-link>
       </ul>
     </div>
   </header>
@@ -41,7 +41,8 @@
         margin: 0 2rem;
         letter-spacing: 2.7px;
       }
-      li:hover {
+      li:hover,
+      li.active {
         border-bottom: 2px solid white;
         cursor: pointer;
       }
@@ -50,7 +51,7 @@
   .middle-line {
     position: relative;
     left: 3%;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba($color: #ffff, $alpha: 0.4);
     width: 40%;
   }
 }
