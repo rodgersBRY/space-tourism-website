@@ -34,22 +34,21 @@
 </template>
 
 <script>
-export default {
-  
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
 #technology {
   background-image: url("../assets/technology/background-technology-desktop.jpg");
   background-size: cover;
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding-top: 3rem;
   color: white;
 }
 
 main {
-  padding: 2rem  0 5rem 5rem;
+  padding: 2rem 0 5rem 5rem;
 }
 
 .top-text {
@@ -106,7 +105,6 @@ main {
 }
 
 .align-horizontally {
-  margin-top: 3rem;
   display: flex;
   position: relative;
   height: 500px;

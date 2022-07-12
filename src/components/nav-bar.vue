@@ -18,9 +18,31 @@
         >
       </ul>
     </div>
-    <div class="mobile-menu">hamburger menu</div>
+    <div class="mobile-menu">
+      <v-btn icon color="white" @click="openMenu">
+        <i class="bx bx-menu bx-lg"></i>
+      </v-btn>
+    </div>
   </header>
 </template>
+
+<script>
+export default {
+  name: "nav-bar",
+
+  data() {
+    return {
+      showNavigation: false,
+    };
+  },
+
+  methods: {
+    openMenu() {
+      this.showNavigation = true;
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 #nav {
@@ -36,6 +58,7 @@
     padding-left: 4rem;
     font-family: "Bellefair", serif;
     font-weight: bold;
+    padding-right: 10px;
     ul {
       list-style: none;
       li {
@@ -53,14 +76,14 @@
     }
   }
   .middle-line {
-  position: relative;
-  left: 3%;
-  border-bottom: 1px solid rgba($color: #ffff, $alpha: 0.4);
-  width: 40%;
-}
-.mobile-menu {
-  display: none;
-}
+    position: relative;
+    left: 3%;
+    border-bottom: 1px solid rgba($color: #ffff, $alpha: 0.4);
+    width: 40%;
+  }
+  .mobile-menu {
+    display: none;
+  }
   @media only screen and (max-width: 1200px) {
     .middle-line {
       display: none;
@@ -79,6 +102,7 @@
     }
   }
   @media only screen and (max-width: 600px) {
+    padding: 10px;
     .nav-links {
       display: none;
     }
@@ -87,5 +111,4 @@
     }
   }
 }
-
 </style>

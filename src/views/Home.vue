@@ -48,6 +48,8 @@ export default {
 #home {
   background-image: url("../assets/home/background-home-desktop.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   padding-top: 3rem;
   color: white;
@@ -78,16 +80,15 @@ main {
   .title-div,
   .explore-btn-div {
     display: flex;
-    height: 700px;
     align-items: flex-end;
     padding: 0 2rem;
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 900px) {
   main {
     display: block;
-    padding-top: 4rem;
+    // padding-top: 4rem;
     .title-div,
     .explore-btn-div {
       display: block;
@@ -98,14 +99,19 @@ main {
   #home {
     background-image: url("../assets/home/background-home-tablet.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding-top: 0;
   }
 }
 
 @media only screen and (max-width: 600px) {
   #home {
+    padding-top: 0;
     background-image: url("../assets/home/background-home-mobile.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 </style>

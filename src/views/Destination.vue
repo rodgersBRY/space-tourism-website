@@ -85,7 +85,9 @@ export default {
 #destination {
   background-image: url("../assets/destination/background-destination-desktop.jpg");
   background-size: cover;
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  // height: 100vh;
   padding-top: 3rem;
 }
 

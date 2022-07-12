@@ -38,6 +38,8 @@ main {
 #crew {
   background-image: url("../assets/crew/background-crew-desktop.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   padding-top: 3rem;
 }
@@ -57,7 +59,7 @@ main {
   font-family: "Bellefair", serif;
   font-size: 32px;
   color: grey;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .crew-name {
